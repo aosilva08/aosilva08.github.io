@@ -7,12 +7,10 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #1a1a1a;
-      color: #e6e6e6;
+      background-color: #ffffff;
+      color: #333333;
       margin: 0;
       padding: 20px;
-      display: flex;
-      flex-direction: row;
     }
     .sidebar {
       width: 200px;
@@ -21,15 +19,16 @@
       top: 0;
       left: 0;
       height: 100%;
-      background-color: #111;
+      background-color: #f0f0f0;
       padding: 15px;
+      border-right: 1px solid #ccc;
     }
     .sidebar a {
-      color: #00aaff;
+      color: #0066cc;
       display: block;
       padding: 10px 0;
       text-decoration: none;
-      font-size: 1em;
+      font-weight: bold;
     }
     .sidebar a:hover {
       text-decoration: underline;
@@ -37,37 +36,40 @@
     .main-content {
       margin-left: 220px;
       padding: 20px;
-      width: 100%;
+      max-width: 900px;
+    }
+    h1 {
+      color: #003366;
     }
     .section-title {
-      color: #00aaff;
+      color: #003366;
       font-size: 1.8em;
-      margin-top: 20px;
+      margin-top: 30px;
     }
     .section-content {
-      background-color: #333;
+      background-color: #f9f9f9;
       padding: 15px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-    .section-content p {
-      margin: 5px 0;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      margin-bottom: 25px;
     }
     .section-content ul {
-      list-style-type: none;
-      padding: 0;
+      padding-left: 20px;
     }
     .section-content ul li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     .date-tag {
-      display: inline-block;
-      background-color: #007acc;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-size: 0.9em;
-      color: #e6e6e6;
+      font-weight: bold;
+      color: #0066cc;
       margin-right: 10px;
+    }
+    a {
+      color: #0066cc;
+    }
+    .back-link {
+      margin-top: 40px;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -83,80 +85,51 @@
   </div>
 
   <div class="main-content">
-    <h1>Curriculum Vitae</h1>
+    <h1>Alejandra Silva – Curriculum Vitae</h1>
 
     <div id="basics" class="section-content">
       <h2 class="section-title">Basics</h2>
       <p><strong>Name:</strong> Alejandra Silva</p>
-      <p><strong>Email:</strong> <a href="mailto:ao.silvajane@gmail.com" style="color: #00aaff;">ao.silvajane@gmail.com</a></p>
+      <p><strong>Email:</strong> <a href="mailto:ao.silvajane@gmail.com">ao.silvajane@gmail.com</a></p>
       <p><strong>Phone:</strong> +1 (773) 595 1307</p>
       <p><strong>Location:</strong> Chicago, IL</p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alejandrasilvaj/" style="color: #00aaff;">linkedin.com/in/alejandrasilvaj</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alejandrasilvaj/">linkedin.com/in/alejandrasilvaj</a></p>
     </div>
 
     <div id="work" class="section-content">
       <h2 class="section-title">Work Experience</h2>
-      <div>
-        <span class="date-tag">2024.09 – 2025.03</span>
-        <strong>SupTech Specialist</strong><br>
-        Cambridge Centre for Alternative Finance (Remote)<br>
-        <ul>
-          <li>Built supervisory data tools with regulators in Peru, Ecuador, Egypt, and India to improve oversight for 100M+ constituents.</li>
-          <li>Applied sentiment analysis to 300K+ policy comments, cutting review time by 80%.</li>
-          <li>Facilitated global forums with 1,000+ stakeholders on digital financial infrastructure.</li>
-        </ul>
-      </div>
-      <div>
-        <span class="date-tag">2024.06 – 2024.09</span>
-        <strong>Graduate Intern – Financial Products Department</strong><br>
-        Office of the Illinois State Treasurer, Chicago, IL<br>
-        <ul>
-          <li>Developed a Power BI dashboard to track $20B+ in state-managed funds, improving liquidity planning.</li>
-          <li>Analyzed long-term trends for a 529 investment fund and proposed strategic adjustments.</li>
-          <li>Recommended prepaid card solutions for 100K+ users, enhancing access and UX.</li>
-        </ul>
-      </div>
-      <div>
-        <span class="date-tag">2019.05 – 2023.08</span>
-        <strong>Economic Research Analyst</strong><br>
-        Superintendency of Banking, Insurance, and Pension Funds, Lima, Peru<br>
-        <ul>
-          <li>Aligned Peru’s regulatory framework with Basel III and IMF standards.</li>
-          <li>Led $13B+ in COVID-19 financial relief design and implementation.</li>
-          <li>Built automated macroprudential heatmaps using SQL & APIs, reducing run time by 99%.</li>
-          <li>Developed Peru’s Deposit Insurance Fund for 200+ cooperatives.</li>
-          <li>Mapped financial access using 1M+ records to inform inclusion policy.</li>
-        </ul>
-      </div>
-      <div>
-        <span class="date-tag">2018.05 – 2019.04</span>
-        <strong>Banking Supervisor</strong><br>
-        Superintendency of Banking, Lima, Peru<br>
-        <ul>
-          <li>Monitored 70% of Peru’s consumer lending through risk exposure analysis.</li>
-          <li>Used SQL to identify systemic vulnerabilities from daily reports.</li>
-        </ul>
-      </div>
+      <p><span class="date-tag">2024.09 – 2025.03</span> <strong>SupTech Specialist</strong>, Cambridge Centre for Alternative Finance (Remote)</p>
+      <ul>
+        <li>Built data tools with regulators in Peru, Ecuador, Egypt, and India to enhance oversight of 100M+ users.</li>
+        <li>Used sentiment analysis on 300K+ comments to flag regulatory risk 80% faster.</li>
+        <li>Led global policy forums on digital finance and infrastructure.</li>
+      </ul>
+
+      <p><span class="date-tag">2024.06 – 2024.09</span> <strong>Graduate Intern</strong>, Illinois State Treasurer’s Office – Financial Products</p>
+      <ul>
+        <li>Designed Power BI dashboard tracking $20B+ in funds for scenario analysis.</li>
+        <li>Created strategy insights for 529 Plan based on 10 years of data.</li>
+        <li>Proposed prepaid card solution for 100K+ users to expand accessibility.</li>
+      </ul>
+
+      <p><span class="date-tag">2019.05 – 2023.08</span> <strong>Economic Research Analyst</strong>, Superintendency of Banking, Peru</p>
+      <ul>
+        <li>Led Peru’s macroprudential reform aligned to Basel III and IMF standards.</li>
+        <li>Directed $13B+ COVID-19 financial relief strategy.</li>
+        <li>Built SQL/API ETL pipelines, reducing data generation from 2 days to 1 minute.</li>
+        <li>Created Deposit Insurance Fund for 200+ institutions and $6B+ in coverage.</li>
+      </ul>
     </div>
 
     <div id="education" class="section-content">
       <h2 class="section-title">Education</h2>
-      <div>
-        <span class="date-tag">2023.07 – 2025.06</span>
-        <strong>Master in Public Policy (MPP)</strong><br>
-        Harris School of Public Policy, University of Chicago, IL<br>
-        <p>GPA: 3.7/4.0 | Coursework: Machine Learning, Cloud Computing, Program Evaluation, Consumer Finance</p>
-      </div>
-      <div>
-        <span class="date-tag">2013 – 2017</span>
-        <strong>BSc in Economics</strong><br>
-        Universidad del Pacífico, Lima, Peru | GPA: 3.8/4.0
-      </div>
+      <p><span class="date-tag">2023.07 – 2025.06</span> <strong>Master in Public Policy (MPP)</strong>, University of Chicago – GPA: 3.7</p>
+      <p><span class="date-tag">2013 – 2017</span> <strong>BSc in Economics</strong>, Universidad del Pacífico – GPA: 3.8</p>
     </div>
 
     <div id="certificates" class="section-content">
       <h2 class="section-title">Certificates</h2>
-      <p>Financial Risk Manager (FRM), Global Association of Risk Professionals (GARP), May 2022</p>
+      <p>Financial Risk Manager (FRM) – Global Association of Risk Professionals (GARP), 2022</p>
     </div>
 
     <div id="languages" class="section-content">
@@ -167,8 +140,8 @@
     <div id="skills" class="section-content">
       <h2 class="section-title">Skills</h2>
       <p><strong>Programming:</strong> Python, R, SQL, VBA</p>
-      <p><strong>Visualization & Reporting:</strong> Power BI, Tableau, ArcGIS, Excel (Advanced), PowerPoint</p>
-      <p><strong>Data Engineering:</strong> APIs, AWS, ETL pipelines</p>
+      <p><strong>Visualization:</strong> Power BI, Tableau, ArcGIS</p>
+      <p><strong>Data Engineering:</strong> APIs, AWS, data pipelines</p>
     </div>
 
     <div id="publications" class="section-content">
@@ -176,6 +149,9 @@
       <p>Silva, A. "El riesgo de quiebra y la efectividad de las políticas macroprudenciales basadas en capital en el Perú" (2021)</p>
       <p>Salinas, J. C., & Silva, A. "Analysis of the IRB asset correlation coefficient for Capital Requirement calibration" (2022)</p>
     </div>
+
+    <p class="back-link"><a href="index.html">← Back to Home</a></p>
   </div>
 </body>
 </html>
+
