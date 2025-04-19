@@ -10,15 +10,41 @@
       background-color: #ffffff;
       color: #333333;
       margin: 0;
-      padding: 20px;
+      padding: 80px 20px 20px 20px; /* espacio extra para navbar */
     }
+
+    /* NAVBAR */
+    .nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .nav a {
+      color: #e6e6e6;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1em;
+      font-weight: bold;
+    }
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* SIDEBAR */
     .sidebar {
       width: 200px;
       padding-top: 20px;
       position: fixed;
-      top: 0;
+      top: 60px; /* debajo del navbar */
       left: 0;
-      height: 100%;
+      height: calc(100% - 60px); /* ajusta altura */
       background-color: #f0f0f0;
       padding: 15px;
       border-right: 1px solid #ccc;
@@ -33,6 +59,7 @@
     .sidebar a:hover {
       text-decoration: underline;
     }
+
     .main-content {
       margin-left: 220px;
       padding: 20px;
@@ -74,6 +101,15 @@
   </style>
 </head>
 <body>
+
+  <!-- NAVBAR -->
+  <div class="nav">
+    <a href="index.html">About Me</a>
+    <a href="cv.html">CV</a>
+    <a href="work-samples.html">Work Samples</a>
+  </div>
+
+  <!-- SIDEBAR -->
   <div class="sidebar">
     <a href="#basics">Basics</a>
     <a href="#work">Work</a>
@@ -84,6 +120,7 @@
     <a href="#publications">Publications</a>
   </div>
 
+  <!-- MAIN CONTENT -->
   <div class="main-content">
     <h1>Alejandra Silva – Curriculum Vitae</h1>
 
@@ -154,4 +191,5 @@
   </div>
 </body>
 </html>
+
 
